@@ -3,8 +3,8 @@ package logrus
 import (
 	"os"
 	"bufio"
-	"log/conf"
-	"log/fileout"
+	"github.com/hexinlee/log/conf"
+	"github.com/hexinlee/log/fileout"
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
 )
