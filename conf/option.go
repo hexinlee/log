@@ -33,7 +33,7 @@ func WithLogLevel(loglevel string) Option {
 
 func WithMaxSize(maxsize int) Option {
 	return func(o *Options) {
-		o.MaxAge = maxsize
+		o.MaxSize = maxsize
 	}
 }
 
