@@ -3,7 +3,7 @@ package zaplog
 import (
 	"context"
 	"fmt"
-	"log/tracer"
+	"github.com/hexinlee/log/tracer"
 	"go.uber.org/zap"
 )
 
