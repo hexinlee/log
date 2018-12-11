@@ -5,8 +5,8 @@ import (
 	"time"
 	"runtime"
 	"strings"
-	"log/conf"
-	"log/fileout"
+	"github.com/hexinlee/log/conf"
+	"github.com/hexinlee/log/fileout"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
