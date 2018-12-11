@@ -1,7 +1,7 @@
 package log
 
 import (
-	"log/plugins/zaplog"
+	"github.com/hexinlee/log/plugins/zaplog"
 )
 
 //默认
