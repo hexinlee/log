@@ -3,7 +3,7 @@ package logrus
 import (
 	"context"
 	"fmt"
-	"log/tracer"
+	"github.com/hexinlee/log/tracer"
 	"github.com/sirupsen/logrus"
 )
 

@@ -3,8 +3,8 @@ package log
 import (
 	"context"
 	"time"
-	"log/conf"
-	"log/plugins/zaplog"
+	"github.com/hexinlee/log/conf"
+	"github.com/hexinlee/log/plugins/zaplog"
 	//"log/plugins/logrus"
 	"testing"
 )
@@ -15,6 +15,7 @@ func TestSetLogger(t *testing.T) {
 		conf.WithLogName(time.Now().Format("2006-01-02")),
 		conf.WithLogPath("logs"),
 		conf.WithLogLevel("info"),
+		conf.WithMaxSize(1),
 	))
 	for i := 0; i < 10000; i++ {
 		Debug("hello", context.Background())
