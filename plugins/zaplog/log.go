@@ -70,9 +70,9 @@ func CallerEncoder(caller zapcore.EntryCaller, enc zapcore.PrimitiveArrayEncoder
 func newZapLogger(level, stacktrace zapcore.Level, output zapcore.WriteSyncer) *zap.Logger {
 	encCfg := zapcore.EncoderConfig{
 		TimeKey:    "@",
-		LevelKey:   "lev",
-		NameKey:    "app",
-		CallerKey:  "func",
+		LevelKey:   "l",
+		//NameKey:    "app",
+		//CallerKey:  "f",
 		MessageKey: "msg",
 		//StacktraceKey: "stacktrace",
 		LineEnding: zapcore.DefaultLineEnding,
