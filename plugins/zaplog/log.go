@@ -72,13 +72,13 @@ func newZapLogger(level, stacktrace zapcore.Level, output zapcore.WriteSyncer) *
 		TimeKey:    "@",
 		LevelKey:   "l",
 		//NameKey:    "app",
-		//CallerKey:  "f",
+		CallerKey:  "func",
 		MessageKey: "msg",
 		//StacktraceKey: "stacktrace",
 		LineEnding: zapcore.DefaultLineEnding,
 		//EncodeCaller:   zapcore.ShortCallerEncoder,
-		EncodeCaller:   CallerEncoder,
-		EncodeDuration: zapcore.NanosDurationEncoder,
+		//EncodeCaller:   CallerEncoder,
+		//EncodeDuration: zapcore.NanosDurationEncoder,
 		//EncodeTime: zapcore.ISO8601TimeEncoder,
 		EncodeTime: func(t time.Time, enc zapcore.PrimitiveArrayEncoder) {
 			enc.AppendString(t.Format("2006-01-02 15:04:05"))
