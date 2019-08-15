@@ -76,7 +76,7 @@ func newZapLogger(level, stacktrace zapcore.Level, output zapcore.WriteSyncer) *
 		MessageKey: "msg",
 		//StacktraceKey: "stacktrace",
 		LineEnding: zapcore.DefaultLineEnding,
-		//EncodeCaller:   zapcore.ShortCallerEncoder,
+		EncodeCaller:   zapcore.ShortCallerEncoder,
 		//EncodeCaller:   CallerEncoder,
 		//EncodeDuration: zapcore.NanosDurationEncoder,
 		//EncodeTime: zapcore.ISO8601TimeEncoder,
